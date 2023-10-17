@@ -16,7 +16,7 @@ Version 1.0 of the Application will provide a platform for users to access and s
 
 1. User Authentication
    - Users must register or log in to access the Application.
-   - Users can create an account using their email address or third-party login options (e.g., Google, Facebook).
+   - Users can create an account using their email address or third-party login options (e.g., Google).
 2. Movie Library
    - The Application will feature a library of movies available for streaming.
    - Users can scroll through the list of available movies.
