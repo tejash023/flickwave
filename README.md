@@ -38,5 +38,5 @@ Version 1.0 of the Application will provide a platform for users to access and s
    - Users can subscribe to the Application to access premium content.
    - Subscription plans will include different durations (e.g., monthly, yearly).
 4. Premium Content
-   - Premium content will be introduced, including exclusive movies and series.
+   - Premium content will be introduced, including exclusive movies and TV series.
    - Only registered users with an active subscription can access premium content.
