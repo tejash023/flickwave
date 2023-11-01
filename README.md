@@ -1,6 +1,6 @@
 # **FlickWave**
 
-## Online Streaming Web Application
+## Online Streaming Web Application (OTT)
 
 ## Introduction
 
