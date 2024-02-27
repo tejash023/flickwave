@@ -16,7 +16,7 @@ const Login = () => {
           alt="login-hero-section"
         />
       </div>
-      <form className="w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg">
+      <form className="w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
         <h1 className="font-semibold text-3xl py-4">
           {isSignInForm ? "Sign In" : "Sign Up"}
         </h1>
@@ -37,7 +37,7 @@ const Login = () => {
           placeholder="Password"
           className="p-4 my-4 w-full bg-gray-700 border-none outline-none rounded-md"
         />
-        <button className="p-4 my-6 w-full bg-blue-700 font-semibold rounded-md">
+        <button className="p-4 my-6 w-full bg-blue-700 font-semibold rounded-md hover:bg-blue-800">
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
 
