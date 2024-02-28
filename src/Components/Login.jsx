@@ -41,12 +41,7 @@ const Login = () => {
             className="p-4 my-4 w-full bg-gray-700 border-none outline-none rounded-md"
           />
         )}
-        <input
-          ref={email}
-          type="text"
-          placeholder="Email or phone number"
-          className="p-4 my-4 w-full bg-gray-700 border-none outline-none rounded-md"
-        />
+
         <input
           ref={password}
           type="password"
