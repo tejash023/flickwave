@@ -3,6 +3,10 @@ import Header from "./Header";
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
 
+  const handleButtonClick = () => {
+    //validate email and password
+  };
+
   const handleSignInForm = () => {
     setIsSignInForm(!isSignInForm);
   };
@@ -37,7 +41,10 @@ const Login = () => {
           placeholder="Password"
           className="p-4 my-4 w-full bg-gray-700 border-none outline-none rounded-md"
         />
-        <button className="p-4 my-6 w-full bg-blue-700 font-semibold rounded-md hover:bg-blue-800">
+        <button
+          className="p-4 my-6 w-full bg-blue-700 font-semibold rounded-md hover:bg-blue-800"
+          onClick={handleButtonClick}
+        >
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
 
