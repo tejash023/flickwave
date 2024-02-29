@@ -6,6 +6,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
+import { firebaseAuthenticationErrors } from "../utils/errorHandling";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -35,8 +36,9 @@ const Login = () => {
         })
         .catch((error) => {
           const errorCode = error.code;
-          const errorMessage = error.message;
-          setErrorMessage(errorMessage);
+          setErrorMessage(
+            firebaseAuthenticationErrors[errorCode] || error.message
+          );
           // ..
         });
     } else {
@@ -54,8 +56,9 @@ const Login = () => {
         })
         .catch((error) => {
           const errorCode = error.code;
-          const errorMessage = error.message;
-          setErrorMessage(errorMessage);
+          setErrorMessage(
+            firebaseAuthenticationErrors[errorCode] || error.message
+          );
         });
     }
   };
@@ -99,7 +102,9 @@ const Login = () => {
           placeholder="Password"
           className="p-4 my-4 w-full bg-gray-700 border-none outline-none rounded-md"
         />
-        <p className="text-red-500 font-semibold text-lg">{errorMessage}</p>
+
+        <p className="text-red-500 font-normal text-base">{errorMessage}</p>
+
         <button
           className="p-4 my-6 w-full bg-blue-700 font-semibold rounded-md hover:bg-blue-800"
           onClick={handleButtonClick}
