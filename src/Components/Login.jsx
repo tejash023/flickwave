@@ -12,6 +12,14 @@ const Login = () => {
     //validate email and password
     const message = checkValidData(email.current.value, password.current.value);
     setErrorMessage(message);
+
+    if (message) return;
+
+    if (!isSignInForm) {
+      //sign up logic
+    } else {
+      //sign in logic
+    }
   };
 
   const handleSignInForm = () => {
